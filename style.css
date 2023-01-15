@@ -5,45 +5,12 @@
 html,body{
     background-image: url('assets/введите текст.png');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: auto;
     font-family: 'Oswald', sans-serif;
 
 }
-
-::-webkit-scrollbar {
-    width: 0px;
-  }
-  ::-webkit-scrollbar-track-piece {
-    background-color: transparent;
-    -webkit-border-radius: 6px;
-  }
-
-.wrapper{
-    position: relative;
-}
-
-.smile{
-    position: absolute;
-    margin-left: 135px;
-    margin-top: 46px;
-}
-
-.sdohnet{
-    position: absolute;
-    margin-top: 301px;
-    margin-left: 124px;
-}
-
-.figure{
-    margin-left: 12px;
-    font-family: 'Oswald';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 45px;
-    line-height: 37px;
-}
-
-.neco{
+@media screen and (min-width:1201px) and (max-width:1920px) {
+    .neco{
     font-family: 'Oswald';
     font-style: normal;
     font-weight: 600;
@@ -51,19 +18,42 @@ html,body{
     line-height: 50px;
     margin-top: 80px;
 }
-
-.melty{
-    font-family: 'Oswald';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 45px;
-    line-height: 37px;
-    margin-top: 90px;
-    margin-left: 12px;
+.smile{
+    position: absolute;
+    margin-left: 135px;
+    margin-top: 46px;
 }
 
-.melty p{
-    padding-top: 35px;
+.cat{
+    position: absolute;
+    display: flex;
+    width: 790px ;
+    height: 889px;
+    margin-left: 0px;
+    top: 200px;
+}
+.cathold{
+    position: absolute;
+    top: 191px;
+    left: 1011px;
+    width: 790px;
+    height: 900px ;
+    border-bottom: 0px solid;
+    overflow: hidden;
+}
+
+.icons{
+    position: absolute;
+    width: 75px;
+    height: 285px;
+    left: 60px;
+    top: 750px;
+}
+
+.sdohnet{
+    position: absolute;
+    margin-top: 301px;
+    margin-left: 124px;
 }
 
 .blya{
@@ -89,13 +79,139 @@ html,body{
     border: 7px solid rgb(20, 20, 20);
 }
 
+}
+@media screen and (min-width: 820px) and (max-width: 1200px) {
+    html,body{
+        background: url('assets/введите текст.png');
+        background-repeat: no-repeat;
+        background-size: auto;
+        max-height: 882px;
+        max-width: 1200px;
+        width: 100%;
+        height: 100%;
+        overflow: scroll;
+        overflow-x: hidden;
+        font-family: 'Oswald', sans-serif;
+}
+.neco{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 130px;
+    line-height: 50px;
+    margin-top: 70px;
+}
+
+.smile{
+    position: absolute;
+    margin-left: 120px;
+    margin-top: 46px;
+}
+
+.smilepic{
+    width: 250px;
+    height: 70px;
+}
+
+.cat{
+    position: absolute;
+    display: flex;
+    width: 670px ;
+    height: 900px;
+    margin-left: 0px;
+    top: 100px;
+}
+
+.cathold{
+    position: absolute;
+    top: 191px;
+    left: 500px;
+    width: 790px;
+    height: 900px ;
+    border-bottom: 0px solid;
+    overflow: hidden;
+}
+
 .icons{
     position: absolute;
     width: 75px;
     height: 285px;
-    left: 60px;
+    left: 40px;
     top: 750px;
 }
+
+.sdohnet{
+    position: absolute;
+    margin-top: 301px;
+    margin-left: 90px;
+}
+
+.blya{
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    padding: 40px 60px;
+    background-color: black;
+    border: 7px solid #000000;
+    border-radius: 25px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 0px;
+    margin-left: 150px;
+    margin-top: 105px;
+    transition: all 0.5s;
+}
+
+.blya:hover{
+    background-color: rgb(20, 20, 20);
+    border: 7px solid rgb(20, 20, 20);
+}
+
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+  }
+  ::-webkit-scrollbar-track-piece {
+    background-color: transparent;
+    -webkit-border-radius: 6px;
+  }
+
+.wrapper{
+    position: relative;
+}
+
+
+
+
+.figure{
+    margin-left: 12px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 37px;
+}
+
+
+
+.melty{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 37px;
+    margin-top: 90px;
+    margin-left: 12px;
+}
+
+.melty p{
+    padding-top: 35px;
+}
+
+
 
 .vk,.ut{
     padding-bottom: 15px;
@@ -109,22 +225,6 @@ html,body{
     position: absolute;
 }
 
-.cat{
-    position: absolute;
-    display: flex;
-    width: 790px ;
-    height: 889px;
-    margin-left: 0px;
-    top: 200px;
-}
 
-.cathold{
-    position: absolute;
-    top: 191px;
-    left: 1011px;
-    width: 790px;
-    height: 900px ;
-    border-bottom: 0px solid;
-    overflow: hidden;
-}
+
 
